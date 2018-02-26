@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HTTP API" parallel="classes" thread-count="3">
+
+    <listeners>
+        <listener class-name="utils.listener.SuiteListener"/>
+    </listeners>
+
+    <parameter name="myParam" value="This is the value for a parameter"/>
+
+
+    <test name="Tests for searching vendors phones">
+        <classes>
+            <class name="search.SearchVendorPhonesWithPOJOTest"/>
+        </classes>
+    </test>
+
+</suite>
